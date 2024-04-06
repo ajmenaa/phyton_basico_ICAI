@@ -49,3 +49,9 @@ print(f"La multiplicación es: {multiplicacion}")
       
 division = 20 / 5
 print(f"La división es: {division}")
+
+division_entera = 10 // 3
+print(f"la división entera es: {division_entera}")
+
+division_modular = 33 % 2
+print(f"el modulo es:{division_modular}")
