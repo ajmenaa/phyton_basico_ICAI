@@ -36,3 +36,16 @@ edad = input('Ingrese su edad: ')
 print(f"Bienvenido: {nombre}, su edad es {edad}")
 
 print("Bienvenido", nombre, "su edad es", edad)
+
+# Operadores
+suma = 5 + 3
+print(f"La suma es: {suma}")
+
+resta = 10 - 5
+print(f"La resta es: {resta}")
+
+multiplicacion = 7 * 8
+print(f"La multiplicación es: {multiplicacion}")
+      
+division = 20 / 5
+print(f"La división es: {division}")
