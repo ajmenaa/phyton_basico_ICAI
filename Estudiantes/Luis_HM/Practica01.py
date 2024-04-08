@@ -7,7 +7,7 @@ base = input("Favor ingresar dato de base del triángulo: ")
 altura = input("Favor indicar valor de la altura: ")
 area_triangulo = int(base) * int(altura)
 
-print("El área del triángulo es de:", area_triangulo)
+print("1- El área del triángulo es de:", area_triangulo)
 
 
 """  
@@ -19,7 +19,7 @@ cantidad_dolar = input("¿Cuantos dólares desea cambiar?  ")
 tipo_cambio = input("¿Cual es el tipo de cambio? ")
 colones = int(cantidad_dolar) * int(tipo_cambio)
 
-print("El equivalente en colones es de ", colones)
+print("2- El equivalente en colones es de ", colones)
 
 
 """ 
@@ -31,7 +31,7 @@ grados_centigrados = input("¿Cual es la temperatura en grados centígrados? ")
 constante_fahrenheit = 1.8
 grados_fahrenheit = ((int(grados_centigrados)*constante_fahrenheit)+32)
 
-print("El equivalente en grados Fahrenheit es de ",grados_fahrenheit)
+print("3- El equivalente en grados Fahrenheit es de ",grados_fahrenheit)
 
 
 """  
@@ -43,7 +43,7 @@ dias_año = 365
 segundos_día = 86400
 segundos_lustro = años_lustro * dias_año * segundos_día
 
-print("Un lustro, es decir, 5 años, contienen un total de : ", segundos_lustro, " segundos.")
+print("4- Un lustro, es decir, 5 años, contienen un total de : ", segundos_lustro, " segundos.")
 
 
 """ 
@@ -55,7 +55,7 @@ velocidad_luz_segundo = 299792458
 distancia_sol_marte = 228000000000
 segundos_sol_marte = distancia_sol_marte / velocidad_luz_segundo
 
-print("La luz del sol tarda ", segundos_sol_marte, " segundos en llegar a Marte, es decir, unos 12.67 minutos")
+print("5- La luz del sol tarda ", segundos_sol_marte, " segundos en llegar a Marte, es decir, unos 12.67 minutos")
 
 
 """ 
@@ -66,7 +66,7 @@ es de 50 cm, mostrar el resultado en pantalla.
 perimetro_llanta = 50 * 3.14159265358979323846
 vueltas = 100000 // perimetro_llanta
 
-print("El número de vueltas que debe dar una llanta de 50 cm de diámetro para recorrer 1km es de ", int(vueltas), " vueltas aproximadamente")
+print("6- El número de vueltas que debe dar una llanta de 50 cm de diámetro para recorrer 1km es de ", int(vueltas), " vueltas aproximadamente")
 
 
 """  
@@ -79,7 +79,7 @@ altura = 20
 angulo = 0.404
 sombra = altura / angulo
 
-print("La longitud de la sombra de un edificio de 20 metros de altura cuando el ángulo de los rayos del sol es de 22 grados es de ",sombra, " metros")
+print("7- La longitud de la sombra de un edificio de 20 metros de altura cuando el ángulo de los rayos del sol es de 22 grados es de ",sombra, " metros")
 
 
 """ 
@@ -90,6 +90,13 @@ print("La longitud de la sombra de un edificio de 20 metros de altura cuando el 
 edad1 = input("Edad del primer participante: ")
 edad2 = input("Edad del segundo participante: ")
 if edad1 == edad2:
-    print("Ambos participantes tienen la misma edad")
+    print("8- Ambos participantes tienen la misma edad")
 else:
-    print("Los participantes tienen edades diferentes")
+    print("8- Los participantes tienen edades diferentes")
+
+
+
+""" 
+9. Mostrar en pantalla la cantidad de meses transcurridos desde la fecha de nacimiento de un 
+usuario. 
+"""
