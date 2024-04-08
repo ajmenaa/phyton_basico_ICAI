@@ -64,4 +64,32 @@ es de 50 cm, mostrar el resultado en pantalla.
 """
 
 perimetro_llanta = 50 * 3.14159265358979323846
-vueltas = 100000 / perimetro_llanta
+vueltas = 100000 // perimetro_llanta
+
+print("El número de vueltas que debe dar una llanta de 50 cm de diámetro para recorrer 1km es de ", int(vueltas), " vueltas aproximadamente")
+
+
+"""  
+7. Calcular y mostrar en pantalla la longitud de la sombra de un edificio de 20 metros de 
+altura cuando el ángulo que forman los rayos del sol con el suelo es de 22º. 
+"""
+
+
+altura = 20
+angulo = 0.404
+sombra = altura / angulo
+
+print("La longitud de la sombra de un edificio de 20 metros de altura cuando el ángulo de los rayos del sol es de 22 grados es de ",sombra, " metros")
+
+
+""" 
+8. Mostrar en pantalla True o False si la edad ingresada por dos usuarios es la misma. 
+"""
+
+
+edad1 = input("Edad del primer participante: ")
+edad2 = input("Edad del segundo participante: ")
+if edad1 == edad2:
+    print("Ambos participantes tienen la misma edad")
+else:
+    print("Los participantes tienen edades diferentes")
