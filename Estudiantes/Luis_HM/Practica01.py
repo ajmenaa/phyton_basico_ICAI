@@ -100,3 +100,32 @@ else:
 9. Mostrar en pantalla la cantidad de meses transcurridos desde la fecha de nacimiento de un 
 usuario. 
 """
+
+fecha_nacimiento = input("En que año nació usted? ")
+mes_nacimiento = input("Indicar el mes en que nació en número, por ejemplo, enero es 1, febrero es 2, etc: ")
+este_año = 2024
+este_mes = 4
+meses_intermedios = (este_año - int(fecha_nacimiento)) * 12
+meses_extremos = este_mes - int(mes_nacimiento)
+total_meses = meses_intermedios + meses_extremos
+
+print("Su edad en meses es de: ",total_meses)
+
+
+""" 
+10. Mostrar en pantalla el promedio de un alumno que ha cursado 5 materias (Español, 
+Matemáticas, Economía, Programación, Ingles).
+"""
+
+print("Para calcular su promedio de notas, favor indicar los resultados de las siguientes materias: ")
+mate = input("Matemáticas: ")
+español = input("Español: ")
+economía = input("Economia: ")
+progra = input("Programación: ")
+inglés = input("Inglés: ")
+promedio = (int(mate)+int(español)+int(economía)+int(progra)+int(inglés))/5
+
+print( mate, español, economía, progra, inglés, "\n", "Su nota promedio es: ",promedio)
+
+
+
