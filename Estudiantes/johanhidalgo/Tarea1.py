@@ -1,3 +1,4 @@
+
 #Primer ejercicio 
 base = float(input("Ingrese base: "))
 altura = float(input("Ingrese altura: "))
@@ -27,3 +28,4 @@ seconds = remainder % 60
 print(f"{number} seconds = {hours} hours {minutes} minutes {seconds} seconds")
 
 #...
+
