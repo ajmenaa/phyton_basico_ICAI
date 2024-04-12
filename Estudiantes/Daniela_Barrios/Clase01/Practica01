@@ -3,22 +3,26 @@ Codigo: Práctica N° 1 de Python
 Autor: Daniela Barrios
 """
 
-mensaje= ('1. Dado los valores ingresados por el usuario -base, altura- calcular y mostrar en pantalla el área de un triángulo')
+# 1. Dado los valores ingresados por el usuario -base, altura- calcular y mostrar en pantalla el área de un triángulo
 
-base = int(input('¿Cuál es la base? '))
-altura = int(input('¿Cuál es la altura? '))
-triangulo = (base * altura)
-print(mensaje)
-print(f"El área del triángulo es: ", {triangulo})
+base = int(input('¿Cuál es la base?: '))
+altura = int(input('¿Cuál es la altura?: '))
+print(type(base))
+print(type(altura))
+triangulo = (base * altura) / 2
+print str(triangulo)
+print(f'El área del triángulo es:' , {triangulo})
 
-mensaje1 = ('2. Convertir la cantidad de dólares ingresados por un usuario a colones y mostrar el resultado en pantalla. ')
+# 2. Convertir la cantidad de dólares ingresados por un usuario a colones y mostrar el resultado en pantalla.
 
 dolares = int(input('Digite el monto en dólares: '))
 tcc = int(input('Digite el tipo de cambio de compra del día: '))
-colones = (dolares * tcc)
+print(type(dolares))
+print(type(tcc))
+colones = str(dolares * tcc)
 print(f'Su monto en colones es', {colones})
 
-mensaje2 = ('4. Mostrar en pantalla la cantidad de segundos que tiene un lustro.')
+# 4. Mostrar en pantalla la cantidad de segundos que tiene un lustro.
 
 anio = 365
 dia = 24
