@@ -71,7 +71,7 @@ print('Bienvenidos a Python Basico' + linea2)
 
 #...
 print('Bienvenidos a Python Basico',linea2)
-```
+
 -   Comillas dobles: Se utilizan para la interpolación de variables y
     para cadenas de texto que abarcan varias líneas.
 -   Comillas simples: Se utilizan para cadenas de texto simples que no
