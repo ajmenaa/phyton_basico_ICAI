@@ -1,0 +1,7 @@
+base = int(input('¿Cuál es la base?: '))
+altura = int(input('¿Cuál es la altura?: '))
+print(type(base))
+print(type(altura))
+triangulo = (base * altura) / 2
+print (triangulo)
+print(f'El área del triángulo es:' , {triangulo})
