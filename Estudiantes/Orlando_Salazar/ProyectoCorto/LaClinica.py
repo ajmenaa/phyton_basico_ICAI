@@ -7,7 +7,7 @@ archivo.close()
 
 datos = json.loads(contenido)
 
-print(datos[0][0])
+print(datos[0][5])
 
 
         
