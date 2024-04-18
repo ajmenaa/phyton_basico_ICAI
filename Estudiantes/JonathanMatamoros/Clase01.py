@@ -34,4 +34,3 @@ print(f"la resta es: {resta}")
 
 multiplicación = 10 * 5
 print(f"el resultado es multiplicación: {multiplicación}")
-
