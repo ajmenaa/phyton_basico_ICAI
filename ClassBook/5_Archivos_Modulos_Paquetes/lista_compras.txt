@@ -1,0 +1,5 @@
+leche:840
+queso:5000
+cerezas:2000
+naranjas:900
+bananos:150
