@@ -1,3 +1,11 @@
-linea2 = '\n Programa de la clase 1'
+def leer_archivo():
+    pass
 
-print('Grupo 1' + linea2)
+def agregar_texto():
+    pass
+
+nombre_archivo = input("Ingrese el nombre del archivo a leer:")
+texto_archivo = input("Ingrese el mensaje:")
+
+#Intentar leer archivo
+leer_archivo()
