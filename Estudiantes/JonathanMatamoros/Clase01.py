@@ -33,4 +33,10 @@ print(f"la resta es: {resta}")
 #multiplicación
 
 multiplicación = 10 * 5
+<<<<<<< HEAD
 print(f"el resultado es multiplicación: {multiplicación}")
+=======
+print(f"el resultado es multiplicación: {multiplicación}")
+
+print ("Import-Module PSReadLine")
+>>>>>>> main
