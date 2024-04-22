@@ -152,6 +152,9 @@ def pacientes_por_medicamento():
         print(f"Existen {conteo} pacientes para el medicamento {valor_a_contar} .")
         
 def compara_pacientes():
+    """
+    Funcion para comparar los datos de dos pacientes y mostrar cuales enfermedades tienen en comun y cuales medicamentos tienen en comun
+    """
     input_id_paciente1 = input('Digite el Identificador del paciente 1: ')
     input_id_paciente2 = input('Digite el Identificador del paciente 2: ')
     print('\n')
@@ -219,7 +222,7 @@ def compara_pacientes():
     for item_medicamento in lista_medicamentos_comunes:
         if item_medicamento not in lista_medicamentos_comunes_unicos:
             lista_medicamentos_comunes_unicos.append(item_medicamento)
-    print("Los medicamentos en comun de los pacientes indicados son las siguientes: \n")         
+    print("Los medicamentos en comun de los pacientes indicados son los siguientes: \n")         
     for item_medicamento in lista_medicamentos_comunes_unicos:
         print(item_medicamento)
     
