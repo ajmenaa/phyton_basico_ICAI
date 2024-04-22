@@ -154,6 +154,7 @@ def pacientes_por_medicamento():
 def compara_pacientes():
     input_id_paciente1 = input('Digite el Identificador del paciente 1: ')
     input_id_paciente2 = input('Digite el Identificador del paciente 2: ')
+    print('\n')
     lista_paciente1 = []
     lista_paciente2 = []
     
@@ -171,8 +172,8 @@ def compara_pacientes():
             #print(tupla_compara_paciente[0])
             if tupla_compara_paciente not in lista_paciente1:
                 lista_paciente1.append(tupla_compara_paciente)
-    print(lista_paciente1)
-    print('\n')
+    #print(lista_paciente1)
+    #print('\n')
     
     for paciente2 in range(len(lista_diccionarios)):
         datos_paciente = str(lista_diccionarios[paciente2])
@@ -185,7 +186,42 @@ def compara_pacientes():
         
             if tupla_compara_paciente not in lista_paciente2:
                 lista_paciente2.append(tupla_compara_paciente)
-    print(lista_paciente2)
+    #print(lista_paciente2)
+    
+    lista_enfermedades_comunes = []
+    lista_enfermedades_comunes_unicas = []
+    
+    for enfermedad_paciente1 in range(len(lista_paciente1)):
+        for enfermedad_paciente2 in range(len(lista_paciente2)):
+            if lista_paciente1[enfermedad_paciente1][1] == lista_paciente2[enfermedad_paciente2][1]:
+                lista_enfermedades_comunes.append(lista_paciente1[enfermedad_paciente1][1])
+    #print(lista_enfermedades_comunes)
+    
+    for item_enfermedad in lista_enfermedades_comunes:
+        if item_enfermedad not in lista_enfermedades_comunes_unicas:
+            lista_enfermedades_comunes_unicas.append(item_enfermedad)
+    print("Las enfermedades en comun de los pacientes indicados son las siguientes: \n")         
+    for item_enfermedad in lista_enfermedades_comunes_unicas:
+        print(item_enfermedad)
+    
+    print('\n')
+    
+    lista_medicamentos_comunes = []
+        
+    for medicamento_paciente1 in range(len(lista_paciente1)):
+        for medicamento_paciente2 in range(len(lista_paciente2)):
+            if lista_paciente1[medicamento_paciente1][2] == lista_paciente2[enfermedad_paciente2][2]:
+                lista_medicamentos_comunes.append(lista_paciente1[enfermedad_paciente1][2])
+    #print(lista_medicamentos_comunes)
+    
+    lista_medicamentos_comunes_unicos = []
+    
+    for item_medicamento in lista_medicamentos_comunes:
+        if item_medicamento not in lista_medicamentos_comunes_unicos:
+            lista_medicamentos_comunes_unicos.append(item_medicamento)
+    print("Los medicamentos en comun de los pacientes indicados son las siguientes: \n")         
+    for item_medicamento in lista_medicamentos_comunes_unicos:
+        print(item_medicamento)
     
         
 def mostrar_menu():
