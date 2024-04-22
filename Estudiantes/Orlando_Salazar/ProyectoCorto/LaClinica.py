@@ -2,6 +2,7 @@ import json
 import ast
 from collections import Counter
 import os
+import msvcrt
 
 #Abre archivo JSON, lee su contenido y carga los datos parseados en la variable datos 
 archivo = open("clinica.json", "r")
@@ -34,11 +35,19 @@ lista_medicamentos = []
 lista_medicamentos_unicos = []
 
 def press_any_key_to_continue():
-    input()  # Wait for user input (Enter key)
-    print('Presione una tecla para continuar...')
+    """
+    Funcion para pausar la ejecucion del programa y solicitar al usuario presionar cualquier tecla para continuar
+    """
+    #input()  # Wait for user input (Enter key)
+    #print('Presione una tecla para continuar...')
+    print("\nPresione una tecla para continuar...")
+    msvcrt.getch()
 
 
 def reporte_enfermedades():
+    """
+    Funcion para recolectar los datos de las enfermedades de los pacientes
+    """
     #Lista todas las enfermedades y carga la lista de enfermedades
     print('************Reporte de enfermedades************\n')
     for enfermedad in range(len(lista_diccionarios)):
@@ -55,7 +64,6 @@ def reporte_enfermedades():
     
 
     #Carga unicamente la lista de enfermedades unicas descartando las que se repiten
-    
     for item in lista_enfermedades:
         if item not in lista_enfermedades_unicas:
             #global lista_enfermedades_unicas
@@ -69,6 +77,9 @@ def reporte_enfermedades():
 #print(pacientes_por_enfermedad)
 #print(pacientes_por_enfermedad['dolor'])
 def pacientes_por_enfermedad():
+    """
+    Funcion para recolectar los datos de los pacientes por cada enfermedad
+    """
     lista_pacientes_por_enfermedad = []
     print('************Reporte de pacientes por enfermedad************\n')
     for pacientes in range(len(lista_diccionarios)):
@@ -89,9 +100,11 @@ def pacientes_por_enfermedad():
             conteo = sum(tupla.count(valor_a_contar) for tupla in lista_pacientes_por_enfermedad)
         print(f"Existen {conteo} pacientes para la enfermedad {valor_a_contar} .")
     
-
-def reporte_medicamentos():    
 #Lista todos los medicamentos recetados en la clinica
+def reporte_medicamentos():    
+    """
+    Funcion para recolectar los datos de los medicamentos entregados por la clinica
+    """
     print('************Reporte de medicamentos************\n')
     for medicamento in range(len(lista_diccionarios)):
         medicamento_str = lista_diccionarios[medicamento]
@@ -115,6 +128,9 @@ def reporte_medicamentos():
 #print(medicamentos_por_paciente)
 #print(medicamentos_por_paciente['acetaminofen'])
 def pacientes_por_medicamento():
+    """
+    Funcion para recolectar los datos de los medicamentos por paciente entregados por la clinica
+    """
     print('************Reporte de pacientes por medicamento************\n')
     lista_pacientes_por_medicamento = []
     for pacientes in range(len(lista_diccionarios)):
@@ -134,6 +150,43 @@ def pacientes_por_medicamento():
         for tuplas in range(len(lista_pacientes_por_medicamento)):
             conteo = sum(tupla.count(valor_a_contar) for tupla in lista_pacientes_por_medicamento)
         print(f"Existen {conteo} pacientes para el medicamento {valor_a_contar} .")
+        
+def compara_pacientes():
+    input_id_paciente1 = input('Digite el Identificador del paciente 1: ')
+    input_id_paciente2 = input('Digite el Identificador del paciente 2: ')
+    lista_paciente1 = []
+    lista_paciente2 = []
+    
+    for paciente1 in range(len(lista_diccionarios)):
+        datos_paciente = str(lista_diccionarios[paciente1])
+        res = ast.literal_eval(datos_paciente)
+        id_paciente1 = res['Identificacion']
+        enfermedad_paciente = res['Enfermedad']
+        medicamento_paciente = res['Medicamento']
+        tupla_compara_paciente = (id_paciente1,enfermedad_paciente,medicamento_paciente)
+        #print(input_id_paciente1)
+        #print(tupla_compara_paciente[0])
+        if input_id_paciente1 == tupla_compara_paciente[0]:
+            #print(id_paciente)
+            #print(tupla_compara_paciente[0])
+            if tupla_compara_paciente not in lista_paciente1:
+                lista_paciente1.append(tupla_compara_paciente)
+    print(lista_paciente1)
+    print('\n')
+    
+    for paciente2 in range(len(lista_diccionarios)):
+        datos_paciente = str(lista_diccionarios[paciente2])
+        res = ast.literal_eval(datos_paciente)
+        id_paciente2 = res['Identificacion']
+        enfermedad_paciente = res['Enfermedad']
+        medicamento_paciente = res['Medicamento']
+        tupla_compara_paciente = (id_paciente2,enfermedad_paciente,medicamento_paciente)
+        if input_id_paciente2 == tupla_compara_paciente[0]:
+        
+            if tupla_compara_paciente not in lista_paciente2:
+                lista_paciente2.append(tupla_compara_paciente)
+    print(lista_paciente2)
+    
         
 def mostrar_menu():
     """
@@ -182,14 +235,14 @@ def mostrar_menu():
             mostrar_menu()
         case 'e':
             os.system('cls')
-            #compara_pacientes()
+            compara_pacientes()
             press_any_key_to_continue()
             mostrar_menu()
         case 's':
             os.system('cls')
             quit()
         case _:
-            print("Opcion Invalida")
+            print("\nOpcion Invalida")
             press_any_key_to_continue()
             mostrar_menu()
 
