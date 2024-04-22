@@ -35,7 +35,7 @@ lista_medicamentos_unicos = []
 
 def press_any_key_to_continue():
     input()  # Wait for user input (Enter key)
-    print("Presione una tecla para continuar...")
+    print('Presione una tecla para continuar...')
 
 
 def reporte_enfermedades():
@@ -140,7 +140,7 @@ def mostrar_menu():
     Funcion para mostrar un menu de opciones al usuario
     """
     os.system('cls')
-    print('**********************Sistema La Clinica*********************************')
+    print('**********************Sistema Informatico La Clinica*********************************')
     print('\n')
     print('Escoja alguna de las siguientes opciones:')
     print('\n')
@@ -178,6 +178,11 @@ def mostrar_menu():
         case 'd':
             os.system('cls')
             pacientes_por_medicamento()
+            press_any_key_to_continue()
+            mostrar_menu()
+        case 'e':
+            os.system('cls')
+            #compara_pacientes()
             press_any_key_to_continue()
             mostrar_menu()
         case 's':
