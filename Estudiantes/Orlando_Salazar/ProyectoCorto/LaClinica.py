@@ -186,6 +186,7 @@ def mostrar_menu():
             press_any_key_to_continue()
             mostrar_menu()
         case 's':
+            os.system('cls')
             quit()
         case _:
             print("Opcion Invalida")
