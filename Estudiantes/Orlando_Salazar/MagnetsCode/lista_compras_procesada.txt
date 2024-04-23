@@ -1,0 +1,4 @@
+apple,452
+pear,565
+grapes,339
+limon,34
