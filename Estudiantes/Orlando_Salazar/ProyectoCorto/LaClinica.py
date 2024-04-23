@@ -2,7 +2,7 @@
 Titulo:            LaClinica.py
 Descripcion:       Proyecto corto La Clinica
 Requirimientos:    Interprete Python
-Uso:               py .\LaClinica.py luego escoge entre las diferentes opciones del Menu
+Uso:               py .\\LaClinica.py luego escoge entre las diferentes opciones del Menu
 Escrito por:       Orlando Salazar<orsaac@gmail.com>
 Fecha:             2024-04-22
 """

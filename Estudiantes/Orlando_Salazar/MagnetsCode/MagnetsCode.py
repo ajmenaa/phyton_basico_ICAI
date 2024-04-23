@@ -2,7 +2,7 @@
 Titulo:            MagnetsCode.py
 Descripcion:       Proyecto Ordenar codigo para procesar archivo de texto y dar como salida otro archivo con los valores agregados al I.V.A
 Requirimientos:    Interprete Python
-Uso:               py .\MagnetsCode.py 
+Uso:               py .\\MagnetsCode.py 
 Escrito por:       Orlando Salazar<orsaac@gmail.com>
 Fecha:             2024-04-22
  """
