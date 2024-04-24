@@ -222,7 +222,7 @@ def compara_pacientes():
         
     for medicamento_paciente1 in range(len(lista_paciente1)):
         for medicamento_paciente2 in range(len(lista_paciente2)):
-            if lista_paciente1[medicamento_paciente1][2] == lista_paciente2[enfermedad_paciente2][2]:
+            if lista_paciente1[medicamento_paciente1][2] == lista_paciente2[medicamento_paciente2][2]:
                 lista_medicamentos_comunes.append(lista_paciente1[enfermedad_paciente1][2])
     #print(lista_medicamentos_comunes)
     
