@@ -1,0 +1,32 @@
+""" DocStings
+Codigo: Práctica N° 1 de Python
+Autor: Daniela Barrios
+"""
+
+mensaje= ('1. Dado los valores ingresados por el usuario -base, altura- calcular y mostrar en pantalla el área de un triángulo')
+
+base = int(input('¿Cuál es la base? '))
+altura = int(input('¿Cuál es la altura? '))
+triangulo = (base * altura)
+print(mensaje)
+print(f"El área del triángulo es: ", {triangulo})
+
+mensaje1 = ('2. Convertir la cantidad de dólares ingresados por un usuario a colones y mostrar el resultado en pantalla. ')
+
+dolares = int(input('Digite el monto en dólares: '))
+tcc = int(input('Digite el tipo de cambio de compra del día: '))
+colones = (dolares * tcc)
+print(f'Su monto en colones es', {colones})
+
+mensaje2 = ('4. Mostrar en pantalla la cantidad de segundos que tiene un lustro.')
+
+anio = 365
+dia = 24
+hora= 60
+minuto = 60
+
+segundo = (anio * dia * hora * minuto * 5)
+print(mensaje2)
+print(f'Un lustro tiene', {segundo}, 'segundos')
+
+

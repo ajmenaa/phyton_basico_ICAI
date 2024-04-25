@@ -63,3 +63,5 @@ print(f"la división entera es: {division_entera}")
 #division modulular o operador de modulo (devuelve el residuo de una división entera)
 modulo = 10 % 5
 print(f"el módulo es: {modulo}")
+      
+ 
