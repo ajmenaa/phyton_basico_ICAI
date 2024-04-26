@@ -1,0 +1,40 @@
+{
+    "clientes": [
+      {
+        "nombre": "Juan Pérez",
+        "direccion": "Calle Mayor 123",
+        "ciudad": "San José",
+        "telefono": "+506 2222-3333"
+      },
+      {
+        "nombre": "María Gómez",
+        "direccion": "Avenida Central 456",
+        "ciudad": "Alajuela",
+        "telefono": "+506 8888-4444"
+      },
+      {
+        "nombre": "Pedro Ramírez",
+        "direccion": "Barrio Escalante 789",
+        "ciudad": "Heredia",
+        "telefono": "+506 5555-6666"
+      },
+      {
+        "nombre": "Ana Castro",
+        "direccion": "Avenida 10 Calle 5",
+        "ciudad": "Cartago",
+        "telefono": "+506 3333-4444"
+      },
+      {
+        "nombre": "Carlos Jiménez",
+        "direccion": "Calle Principal 12",
+        "ciudad": "Liberia",
+        "telefono": "+506 6666-7777"
+      },
+      {
+        "nombre": "Diana Solano",
+        "direccion": "Barrio La Unión 78",
+        "ciudad": "Puntarenas",
+        "telefono": "+506 9999-8888"
+      }
+    ]
+  }  
