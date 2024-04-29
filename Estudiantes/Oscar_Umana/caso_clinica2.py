@@ -13,6 +13,7 @@ lista_pacientes = [
 ["789", 45522221, "Limón", "Puerto Viejo", "presion", "acetaminofen"]
 ]
 
+#creando el array a partir de la lista
 a1 = np.array(lista_pacientes)
 print(a1)
 print(a1[a1=="gripe"])
@@ -39,7 +40,20 @@ print("La cantidad de pacientes que toman acetaminofen es de:", med_1.size)
 print("La cantidad de pacientes que toman jarabe es de:", med_2.size)
 print("La cantidad de pacientes que toman antiacido es de:", med_3.size)
 
-Id_paciente_1 = input("ingrese un numero de pacientes, entre estas opciones: 123, 456, 789 y 345:") 
-Id_paciente_2 = input("ingrese un segundo numero de pacientes, entre estas opciones: 123, 456, 789 y 345:")
+Id_paciente_1 = int(input("ingrese un numero de paciente, entre estas opciones: 0 al 9: ")) 
+Id_paciente_2 = int(input("ingrese un segundo numero de paciente, entre estas opciones: 0 al 9: "))
 
+a2 = np.array(lista_pacientes[Id_paciente_1])
+print(a2)
 
+a3 = np.array(lista_pacientes[Id_paciente_2])
+print(a3)
+
+if a2[5] == a3[5]:
+    print("estos dos pacientes usan la misma medicina")
+if a2[5] != a3[5]:
+    print("estos dos pacientes no usan la misma medicina")
+if a2[4] == a3[4]:
+    print("estos dos pacientes tienen la misma enfermedad")
+if a2[4] != a3[4]:
+    print("estos dos  pacientes no tienen la misma enfermedad")
